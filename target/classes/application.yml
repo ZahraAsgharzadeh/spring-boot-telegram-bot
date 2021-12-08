@@ -1,0 +1,31 @@
+spring:
+
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/downloader_bot
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    platform: postgres
+
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate:
+      ddl-auto: update
+      jdbc:
+        time_zone: UTC
+    show-sql: true
+    generate-ddl: true
+    open-in-view: false
+
+server:
+  port: 8090
+
+bot:
+  username: bot_username
+  token: bot_token
+
+youtube:
+  base-video-url: https://www.youtube.com/watch?v=
+  api-key: AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+  base-info-url: https://www.youtube.com/youtubei/v1/player?key=
